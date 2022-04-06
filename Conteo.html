@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="iso-8859-1"/>
+<meta name="description" content="Ejemplo de HTML5"/>
+<meta name="keywords" content="HTML5, CSS3, JavaScript" />
+<title>Practica Conteo</title>
+<center><h2><header>Practica Conteo</header></h2></center>
+<link rel="stylesheet" href="./css/miestiloconteo.css"/>
+<body>
+;
+    
+        
+        <p id="areaContador"></p>
+        <form name="resultados">
+        <p>
+            <label>Score: <br> 
+            <span id="score">
+            </label>
+        </p>
+        <br>
+        <center>
+            <span id="contador">
+            </span><br>
+            <label>Contador:<br></label>
+        </center>    
+        <br>
+        </form>
+        
+        <center>
+            <button id="botonClick">
+                +
+            </button>
+        </center> 
+        <script type="text/javascript">
+            const music = new Audio('audio/coin.mp3')
+            var botonElement = document.getElementById("botonClick");
+            var contador = 0;
+            var score = 0;
+          
+            botonElement.onclick = function () {
+                contador++;
+
+                
+                if(contador>=20){
+                    score++;
+                    contador=0;
+                    music.play();          
+            }  
+            document.getElementById("contador").innerHTML = contador;
+            document.getElementById("score").innerHTML = score;
+        }
+        </script>  
+    </p>
+</body>
+</html>

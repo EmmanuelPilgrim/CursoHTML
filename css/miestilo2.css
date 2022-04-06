@@ -1,12 +1,13 @@
 body {
     font-family:'arial';
-    color:lightskyblue;
+    color: lightcoral;
     text-align: justify;
-    background-color: black;
+    background-color: lightgreen;
 }
 p {
     font-family: 'Calibri';
-    color:green;
+    color:coral;
     text-align: justify;
 }
+
 
